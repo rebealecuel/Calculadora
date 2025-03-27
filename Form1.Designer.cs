@@ -31,37 +31,119 @@
             this.txbNum1 = new System.Windows.Forms.TextBox();
             this.txbNum2 = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnSuma = new System.Windows.Forms.Button();
+            this.btnResta = new System.Windows.Forms.Button();
+            this.btnMultiplicar = new System.Windows.Forms.Button();
+            this.btnDividir = new System.Windows.Forms.Button();
+            this.btnResiduo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txbNum1
             // 
-            this.txbNum1.Location = new System.Drawing.Point(110, 110);
+            this.txbNum1.Location = new System.Drawing.Point(133, 107);
             this.txbNum1.Name = "txbNum1";
             this.txbNum1.Size = new System.Drawing.Size(133, 20);
             this.txbNum1.TabIndex = 0;
             // 
             // txbNum2
             // 
-            this.txbNum2.Location = new System.Drawing.Point(311, 110);
+            this.txbNum2.Location = new System.Drawing.Point(334, 107);
             this.txbNum2.Name = "txbNum2";
             this.txbNum2.Size = new System.Drawing.Size(133, 20);
             this.txbNum2.TabIndex = 1;
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(505, 49);
+            this.btnBorrar.Location = new System.Drawing.Point(253, 248);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(94, 36);
+            this.btnBorrar.Size = new System.Drawing.Size(126, 36);
             this.btnBorrar.TabIndex = 2;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(169, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Numero 1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(377, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Numero 2";
+            // 
+            // btnSuma
+            // 
+            this.btnSuma.Location = new System.Drawing.Point(51, 158);
+            this.btnSuma.Name = "btnSuma";
+            this.btnSuma.Size = new System.Drawing.Size(79, 28);
+            this.btnSuma.TabIndex = 5;
+            this.btnSuma.Text = "Sumar";
+            this.btnSuma.UseVisualStyleBackColor = true;
+            this.btnSuma.Click += new System.EventHandler(this.btnSuma_Click);
+            // 
+            // btnResta
+            // 
+            this.btnResta.Location = new System.Drawing.Point(163, 158);
+            this.btnResta.Name = "btnResta";
+            this.btnResta.Size = new System.Drawing.Size(80, 28);
+            this.btnResta.TabIndex = 6;
+            this.btnResta.Text = "Restar";
+            this.btnResta.UseVisualStyleBackColor = true;
+            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
+            // 
+            // btnMultiplicar
+            // 
+            this.btnMultiplicar.Location = new System.Drawing.Point(265, 158);
+            this.btnMultiplicar.Name = "btnMultiplicar";
+            this.btnMultiplicar.Size = new System.Drawing.Size(92, 27);
+            this.btnMultiplicar.TabIndex = 7;
+            this.btnMultiplicar.Text = "Multiplicar";
+            this.btnMultiplicar.UseVisualStyleBackColor = true;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
+            // 
+            // btnDividir
+            // 
+            this.btnDividir.Location = new System.Drawing.Point(380, 158);
+            this.btnDividir.Name = "btnDividir";
+            this.btnDividir.Size = new System.Drawing.Size(94, 27);
+            this.btnDividir.TabIndex = 8;
+            this.btnDividir.Text = "Dividir";
+            this.btnDividir.UseVisualStyleBackColor = true;
+            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
+            // btnResiduo
+            // 
+            this.btnResiduo.Location = new System.Drawing.Point(497, 158);
+            this.btnResiduo.Name = "btnResiduo";
+            this.btnResiduo.Size = new System.Drawing.Size(94, 27);
+            this.btnResiduo.TabIndex = 9;
+            this.btnResiduo.Text = "Residuo";
+            this.btnResiduo.UseVisualStyleBackColor = true;
+            this.btnResiduo.Click += new System.EventHandler(this.btnResiduo_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(627, 450);
+            this.Controls.Add(this.btnResiduo);
+            this.Controls.Add(this.btnDividir);
+            this.Controls.Add(this.btnMultiplicar);
+            this.Controls.Add(this.btnResta);
+            this.Controls.Add(this.btnSuma);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.txbNum2);
             this.Controls.Add(this.txbNum1);
@@ -77,6 +159,13 @@
         private System.Windows.Forms.TextBox txbNum1;
         private System.Windows.Forms.TextBox txbNum2;
         private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSuma;
+        private System.Windows.Forms.Button btnResta;
+        private System.Windows.Forms.Button btnMultiplicar;
+        private System.Windows.Forms.Button btnDividir;
+        private System.Windows.Forms.Button btnResiduo;
     }
 }
 
