@@ -31,8 +31,8 @@
             this.txbNum1 = new System.Windows.Forms.TextBox();
             this.txbNum2 = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.numero1 = new System.Windows.Forms.Label();
+            this.numero2 = new System.Windows.Forms.Label();
             this.btnSuma = new System.Windows.Forms.Button();
             this.btnResta = new System.Windows.Forms.Button();
             this.btnMultiplicar = new System.Windows.Forms.Button();
@@ -64,23 +64,23 @@
             this.btnBorrar.UseVisualStyleBackColor = true;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
-            // label1
+            // numero1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(169, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Numero 1";
+            this.numero1.AutoSize = true;
+            this.numero1.Location = new System.Drawing.Point(169, 59);
+            this.numero1.Name = "numero1";
+            this.numero1.Size = new System.Drawing.Size(53, 13);
+            this.numero1.TabIndex = 3;
+            this.numero1.Text = "Numero 1";
             // 
-            // label2
+            // numero2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(377, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Numero 2";
+            this.numero2.AutoSize = true;
+            this.numero2.Location = new System.Drawing.Point(377, 59);
+            this.numero2.Name = "numero2";
+            this.numero2.Size = new System.Drawing.Size(53, 13);
+            this.numero2.TabIndex = 4;
+            this.numero2.Text = "Numero 2";
             // 
             // btnSuma
             // 
@@ -142,8 +142,8 @@
             this.Controls.Add(this.btnMultiplicar);
             this.Controls.Add(this.btnResta);
             this.Controls.Add(this.btnSuma);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numero2);
+            this.Controls.Add(this.numero1);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.txbNum2);
             this.Controls.Add(this.txbNum1);
@@ -159,8 +159,8 @@
         private System.Windows.Forms.TextBox txbNum1;
         private System.Windows.Forms.TextBox txbNum2;
         private System.Windows.Forms.Button btnBorrar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label numero1;
+        private System.Windows.Forms.Label numero2;
         private System.Windows.Forms.Button btnSuma;
         private System.Windows.Forms.Button btnResta;
         private System.Windows.Forms.Button btnMultiplicar;
